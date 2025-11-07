@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>weather dashboard</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/d3js/7.8.5/d3.min.js"></script>
+<script src="script.js"></script>
+
+<body>
+    <p>
+        <h>Latitude:</h>
+        <input type="text" id="latitude">
+        <select id="latDirection">
+            <option value="N">N</option>
+            <option value="S">S</option>
+        </select>
+        <h>Longitude:</h>
+        <input type="text" id="longitude">
+        <select id="longDirection">
+            <option value="E">E</option>
+            <option value="W">W</option>
+        </select>
+    </p>
+    <p>
+        <select id="units">
+            <option value="fahrenheit">fahrenheit</option>
+            <option value="celcius">celcius</option>
+        </select>
+    </p>
+    <p>
+        <select id="time">
+            <option value="historical">historical</option>
+            <option value="forecast">forecast</option>
+        </select>
+    </p>
+    <p>
+        <button onclick="getAllArguments()">submit</button>
+    </p>
+    <p id="more">
+    </p>
+</body>
+</html>
